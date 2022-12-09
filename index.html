@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMM CSSだけでスライドショーを実装</title>
+    <link
+      rel="shortcut icon"
+      href="./img/Mornig-meeting.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/stars.css" />
+    <link rel="stylesheet" href="./css/slide.css" />
+  </head>
+
+  <body>
+    <div class="stars">
+      <!-- ここにコンテンツを入れる -->
+      <div class="wrap position-relative">
+        <header class="header">
+          <h1>
+            <img src="./img/Mornig-meeting@3x.png" alt="3rd Morning Meeting" />
+          </h1>
+        </header>
+
+        <div class="main">
+          <div class="kv-area">
+            <div class="kv">
+              <!-- <img src="./img/kv-img.jpg" alt="" /> -->
+            </div>
+
+            <div class="bar">
+              <p>
+                JavaScriptを使わずにCSSだけで<br />
+                スライドショーを実装する方法
+              </p>
+            </div>
+          </div>
+
+          <!-- 矢印ボタン付きスライドショー -->
+          <div class="content">
+            <h2 class="content-title">矢印ボタン付きスライドショー</h2>
+            <div class="slideshow">
+              <input type="radio" name="slideshow" id="switch1" checked />
+              <input type="radio" name="slideshow" id="switch2" />
+              <input type="radio" name="slideshow" id="switch3" />
+              <input type="radio" name="slideshow" id="switch4" />
+              <input type="radio" name="slideshow" id="switch5" />
+
+              <div class="slideContents">
+                <div id="slide1">
+                  <img src="./img/slide01.jpg" alt="" />
+                </div>
+
+                <div id="slide2">
+                  <img src="./img/slide02.jpg" alt="" />
+                </div>
+
+                <div id="slide3">
+                  <img src="./img/slide03.jpg" alt="" />
+                </div>
+
+                <div id="slide4">
+                  <img src="./img/slide04.jpg" alt="" />
+                </div>
+              </div>
+
+              <p class="arrow prev">
+                <i class="ico"></i>
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <!-- <label for="switch5"></label> -->
+              </p>
+
+              <p class="arrow next">
+                <i class="ico"></i>
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <!-- <label for="switch5"></label> -->
+              </p>
+            </div>
+            <h3>参考サイト</h3>
+            <a href="https://lopan.jp/css-animation/slideshow/"
+              >スライドショー 動くためのメモ。</a
+            >
+          </div>
+
+          <!-- フェードイン･アウトするスライドショー -->
+          <div class="content">
+            <h2 class="content-title">フェードイン･アウトするスライドショー</h2>
+            <div class="slide">
+              <img src="./img/slide01.jpg" alt="" />
+              <img src="./img/slide02.jpg" alt="" />
+              <img src="./img/slide03.jpg" alt="" />
+              <img src="./img/slide04.jpg" alt="" />
+            </div>
+            <h3>参考サイト</h3>
+            <a href="https://weblasts.com/css/css-slideshow"
+              >CSSだけでスライドショー</a
+            >
+          </div>
+
+          <!-- 横スクロールスライドショー -->
+          <div class="content">
+            <h2 class="content-title">横スクロールスライドショー</h2>
+            <div class="slider">
+              <div class="slider-inner">
+                <div class="slider-item">
+                  <img src="./img/slide01.jpg" alt="" />
+                </div>
+                <div class="slider-item">
+                  <img src="./img/slide02.jpg" alt="" />
+                </div>
+                <div class="slider-item">
+                  <img src="./img/slide03.jpg" alt="" />
+                </div>
+                <div class="slider-item">
+                  <img src="./img/slide04.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <h3>参考サイト</h3>
+            <a href="https://web-camp.io/magazine/archives/80525"
+              >HTMLとCSSだけでホームページにスライドショーを作る方法を解説</a
+            >
+          </div>
+        </div>
+        <!-- 自分が身につけた（つけたい）Webサイト制作の技術 -->
+        <div class="content">
+          <h2 class="content-title">
+            自分が身につけた（つけたい）Webサイト制作の技術
+          </h2>
+
+          <div class="text-area">
+            <div class="text-content">
+              <h3>なぜ自分はこの技術を身につけたいのか</h3>
+              <p>JavaScriptを使わずに実装できる</p>
+              <p>動作が軽くなるのでモバイルにやさしい</p>
+            </div>
+
+            <div class="text-content">
+              <h3>
+                現在その技術は身に付いているのか、それはどのような場面に活かせそうか
+              </h3>
+              <p>画像枚数によって対応できるぐらいには理解できている</p>
+              <p>ポートフォリオサイトのキービジュアルに実装した</p>
+            </div>
+
+            <div class="text-content">
+              <h3>習得するにあたってどのような問題があったのか</h3>
+              <p>
+                ポートフォリオサイトに実装したときに<br />
+                レスポンシブ対応が上手くいかなかった
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- おまけ -->
+        <div class="bonus">
+          <h2>おまけ</h2>
+          <a
+            href="https://web-dev.tech/front-end/javascript/twinkle-stars-effect/"
+            >JSとCSSでキラキラ輝く星空エフェクトを実装する方法</a
+          >
+          <a
+            href="https://little-strange.hatenablog.com/entry/2022/07/04/234839"
+            >【CSS】瞬く星空</a
+          >
+        </div>
+
+        <footer class="footer">
+          <small>© CSSだけでスライドショーを実装</small>
+        </footer>
+      </div>
+    </div>
+    <script src="./js/stars.js"></script>
+  </body>
+</html>
